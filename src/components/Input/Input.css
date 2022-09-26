@@ -1,0 +1,57 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.Input label {
+  color: var(--text-color-2);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.Input .input-box {
+  position: relative;
+  width: 100%;
+}
+
+.Input input, .Input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(87, 97, 112, 48%);
+  margin-top: 10px;
+  background: rgb(87, 97, 112, 8%);
+  border-radius: 5px;
+  color: var(--text-color-2);
+}
+
+.Input textarea {
+  resize: none;
+}
+
+.Input input::placeholder, .Input textarea::placeholder {
+  color: #65707A;
+}
+
+.Input input:focus, .Input textarea:focus {
+  border: 1px solid var(--text-color-1);
+}
+
+.Input .password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  top: 45%;
+}
+
+.Input .eye-close, .Input .eye-open {
+  color: #65707A;
+}
+
+.Input .error {
+  font-size: 12px;
+  font-weight: 500;
+  color: #DE3B2D;
+  margin-top: 5px;
+  margin-left: 4px;
+}

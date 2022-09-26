@@ -1,0 +1,136 @@
+.AnimeCard {
+  height: 350px;
+  transition: 1s;
+}
+
+.AnimeCard:hover {
+  transform: rotateX(180deg) rotateY(180deg);
+}
+
+.AnimeCard .front-card {
+  border: 2px solid rgb(87, 97, 112, 48%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.AnimeCard .front-card img {
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.AnimeCard .front-card p {
+  z-index: 2;
+  margin-top: 20px;
+  color: var(--text-color-2);
+  font-family: 500;
+}
+
+.AnimeCard .back-card {
+  display: none;
+  height: 350px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(87, 97, 112, 48%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.AnimeCard .back-card-data {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  color: var(--text-color-2);
+}
+
+.AnimeCard .back-card-data .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.AnimeCard .back-card-data .trailer-link {
+  display: flex;
+  align-items: center;
+}
+
+.AnimeCard .back-card-data .trailer-link a {
+  color: var(--text-color-1);
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.AnimeCard .back-card-data .trailer-link .link-icon {
+  color: var(--text-color-1);
+}
+
+.AnimeCard .back-card-data .genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 6px 0;
+}
+
+.AnimeCard .back-card-data .genre {
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 25px;
+  color: #000;
+  font-weight: 600;
+}
+
+.AnimeCard .back-card-data .rating {
+  border: 1px solid rgb(87, 97, 112, 48%);
+  background: #FFD700;
+  padding: 4px 8px;
+  border-radius: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+  margin: 10px 0;
+  color: #000;
+  font-weight: 600;
+}
+
+.AnimeCard .back-card-data .rating p{
+  margin-right: 4px;
+}
+
+.AnimeCard .back-card-data .year {
+  background: rgb(87, 97, 112, 48%);
+  padding: 4px 8px;
+  border-radius: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.AnimeCard .back-card-data .year p{
+  margin-right: 4px;
+}
+
+.AnimeCard .back-card-data .Button {
+  width: 100%;
+  justify-self: flex-end;
+}
+
+.AnimeCard:hover .front-card {
+  display: none;
+}
+
+.AnimeCard:hover .back-card {
+  display: flex;
+  transform: rotateX(180deg) rotateY(180deg);
+}

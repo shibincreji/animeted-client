@@ -1,0 +1,74 @@
+.Login {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 90vh;
+  padding: 0 10%;
+}
+
+.Login > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+}
+
+.Login > div > h1 {
+  color: var(--text-color-2);
+  margin-bottom: 20px;
+}
+
+.Login > div > h1 span {
+  color: var(--text-color-1);
+}
+
+.Login > div > p {
+  font-weight: 500;
+  margin-top: 30px;
+  color: var(--text-color-2);
+}
+
+.Login > div > p a {
+  cursor: pointer;
+  color: var(--text-color-1);
+}
+
+.Login > div > a {
+  margin-top: 5px;
+  cursor: pointer;
+  color: var(--text-color-1);
+}
+
+.Login img {
+  position: absolute;
+  height: 80vh;
+  left: 10%;
+  bottom: 8%;
+}
+
+.Login .error {
+  color: #de3b2d;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .Login {
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .Login > div {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .Login img {
+    position: static;
+    height: 40vh;
+    width: auto;
+    z-index: 1;
+  }
+}

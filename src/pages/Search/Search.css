@@ -1,0 +1,185 @@
+.Search {
+  padding: 0 15%;
+}
+
+.Search .search-bar {
+  margin: 5vh 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Search .search-bar label {
+  color: var(--text-color-2);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.Search .search-term {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Search .search-bar input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid rgb(87, 97, 112, 48%);
+  margin-top: 10px;
+  background: rgb(87, 97, 112, 8%);
+  border-radius: 5px;
+  color: var(--text-color-2);
+}
+
+.Search .search-bar input::placeholder {
+  color: #65707a;
+}
+
+.Search .dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.dropdown select {
+  padding: 10px 20px;
+  border: 1px solid rgb(87, 97, 112, 48%);
+  margin-top: 10px;
+  background-color: #08080c;
+  border-radius: 5px;
+  color: var(--text-color-2);
+  cursor: pointer;
+}
+
+.dropdown select option {
+  font-size: 14px;
+}
+
+.dropdown input::placeholder {
+  color: #65707a;
+}
+
+.Search .loading {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search .error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Search .error p {
+  font-size: 20px;
+  color: var(--text-color-2);
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.Search .error img {
+  height: 200px;
+}
+
+.Search .anime-results {
+  padding-bottom: 80px;
+}
+
+.Search .anime-results .load-more {
+  margin: 40px auto;
+  text-align: center;
+  color: var(--text-color-1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search .anime-results .load-more p {
+  width: max-content;
+  border: 1px solid rgb(87, 97, 112, 48%);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.Search .anime-results .load-more:hover {
+  opacity: 0.8;
+}
+
+.Search .anime-results .second-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.Search .anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-gap: 20px;
+}
+
+.Search .no-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Search .no-search p {
+  color: var(--text-color-2);
+  font-size: 20px;
+  color: var(--text-color-2);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.Search .no-search img {
+  height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .Search {
+    padding: 0 5%;
+  }
+
+  .Search .search-bar {
+    margin: 5vh 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Search .no-search {
+    margin-top: 60px;
+  }
+
+  .Search .error {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Search {
+    padding: 0 6%;
+  }
+
+  .Search .search-bar {
+    margin: 2vh 0;
+    gap: 0;
+  }
+
+  .Search .search-bar input {
+    width: 95%;
+  }
+
+  .Search .no-search p {
+    font-size: 16px;
+  }
+
+  .Search .anime-list {
+    grid-template-columns: repeat(auto-fill, minmax(90vw, auto));
+  }
+}
